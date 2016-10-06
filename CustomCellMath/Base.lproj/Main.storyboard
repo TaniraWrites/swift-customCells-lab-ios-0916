@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qrj-N8-403">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="JCZ-a8-bMM">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -9,43 +9,39 @@
     </dependencies>
     <scenes>
         <!--Math-->
-        <scene sceneID="Z9h-dI-JiY">
+        <scene sceneID="SoZ-Ym-XBb">
             <objects>
-                <viewController id="qrj-N8-403" customClass="TableViewController" customModule="CustomCellMath" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Imb-TK-asg"/>
-                        <viewControllerLayoutGuide type="bottom" id="7cU-zz-fEp"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="91q-97-Lgw">
+                <tableViewController id="8bs-uD-SsJ" customClass="TableViewController" customModule="CustomCellMath" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ijh-g9-JD1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mathCell" rowHeight="78" translatesAutoresizingMaskIntoConstraints="NO" id="Lbh-S3-VEY" customClass="MathTableViewCell" customModule="CustomCellMath" customModuleProvider="target">
-                                <frame key="frameInset" minY="85" width="375" height="105"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="mathCell" rowHeight="78" id="Uua-xm-Ljp" customClass="MathTableViewCell" customModule="CustomCellMath" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="78"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lbh-S3-VEY" id="DsJ-mA-MJq">
-                                    <frame key="frameInset" width="375" height="104"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Uua-xm-Ljp" id="pCt-e1-MGa">
+                                    <frame key="frameInset" width="375" height="77"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FoL-K9-Juc">
-                                            <frame key="frameInset" minX="42" minY="42" width="359" height="89"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="iiN-eI-qV9">
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FjM-dL-5Yy">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUx-70-XVF">
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1uF-lb-XiM">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sm-Oc-swg">
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIS-fv-DdJ">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69k-Ub-X9l">
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tqm-gh-4Yw">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Res-2e-WcI">
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -54,28 +50,31 @@
                                         </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="FoL-K9-Juc" firstAttribute="leading" secondItem="DsJ-mA-MJq" secondAttribute="leadingMargin" id="4Mn-V9-PVU"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="FoL-K9-Juc" secondAttribute="trailing" id="mna-XD-MaA"/>
-                                        <constraint firstItem="FoL-K9-Juc" firstAttribute="top" secondItem="DsJ-mA-MJq" secondAttribute="topMargin" id="uoY-Za-rLI"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="FoL-K9-Juc" secondAttribute="bottom" id="vyx-hD-qbt"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="iiN-eI-qV9" secondAttribute="bottom" id="A9T-8I-Keq"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="iiN-eI-qV9" secondAttribute="trailing" id="HSn-ln-Poq"/>
+                                        <constraint firstItem="iiN-eI-qV9" firstAttribute="leading" secondItem="pCt-e1-MGa" secondAttribute="leadingMargin" id="ab8-ls-Mhd"/>
+                                        <constraint firstItem="iiN-eI-qV9" firstAttribute="top" secondItem="pCt-e1-MGa" secondAttribute="topMargin" id="dT2-CS-vh0"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="firstNumberLabel" destination="FjM-dL-5Yy" id="jNF-wN-1mG"/>
-                                    <outlet property="fourthNumberLabel" destination="Tqm-gh-4Yw" id="gpi-SP-n3o"/>
-                                    <outlet property="secondNumberLabel" destination="1uF-lb-XiM" id="lPZ-kp-2fp"/>
-                                    <outlet property="thirdNumberLabel" destination="fIS-fv-DdJ" id="I6K-Ne-EBB"/>
-                                    <segue destination="Jzt-HL-kg1" kind="show" identifier="mathCell" id="pMr-eh-TWy"/>
+                                    <outlet property="firstNumberLabel" destination="NUx-70-XVF" id="g9d-ey-qVV"/>
+                                    <outlet property="fourthNumberLabel" destination="Res-2e-WcI" id="9zj-D1-kYL"/>
+                                    <outlet property="secondNumberLabel" destination="6sm-Oc-swg" id="HJi-5l-GzI"/>
+                                    <outlet property="thirdNumberLabel" destination="69k-Ub-X9l" id="qyN-bT-Wgo"/>
+                                    <segue destination="Jzt-HL-kg1" kind="show" identifier="directionSegue" id="Ul1-Qv-bgB"/>
                                 </connections>
                             </tableViewCell>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Math" id="GVb-SV-SMA"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Jhz-XZ-bVb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="8bs-uD-SsJ" id="LVQ-jB-k2v"/>
+                            <outlet property="delegate" destination="8bs-uD-SsJ" id="rmF-7O-MnR"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Math" id="Zi5-Zo-X8X"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8YY-9H-FLb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1671" y="372"/>
+            <point key="canvasLocation" x="2612" y="377.36131934032989"/>
         </scene>
         <!--Display Math View Controller-->
         <scene sceneID="E7L-Ds-3va">
@@ -350,25 +349,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5v-pg-uCS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2463.1999999999998" y="378.26086956521743"/>
+            <point key="canvasLocation" x="3402.4000000000001" y="378.26086956521743"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="LsL-qN-dPQ">
+        <scene sceneID="0CV-uL-i7b">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lkc-vj-cfV" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JCZ-a8-bMM" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dR1-an-Cyl">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pZd-ke-Cqe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="qrj-N8-403" kind="relationship" relationship="rootViewController" id="Qag-oZ-cCq"/>
+                        <segue destination="8bs-uD-SsJ" kind="relationship" relationship="rootViewController" id="WTI-vr-KBx"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ePY-JF-FBp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UU7-r9-gur" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="893.60000000000002" y="371.96401799100454"/>
+            <point key="canvasLocation" x="1672.8" y="377.36131934032989"/>
         </scene>
     </scenes>
 </document>

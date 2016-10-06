@@ -29,22 +29,31 @@ class TableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "mathCell", for: indexPath) as! MathTableViewCell
-        let selectedArray = numbers[indexPath.row]
         
-        cell.firstNumberLabel?.text = String(describing: numbers[selectedArray[0]])
-        cell.secondNumberLabel?.text = String(describing: numbers[selectedArray[1]])
-        cell.thirdNumberLabel?.text = String(describing: numbers[selectedArray[2]])
-        cell.fourthNumberLabel?.text = String(describing: numbers[selectedArray[3]])
+        cell.firstNumberLabel?.text = String(numbers[indexPath.row][0])
+        cell.secondNumberLabel?.text = String(describing: numbers[indexPath.row][1])
+        cell.thirdNumberLabel?.text = String(describing: numbers[indexPath.row][2])
+        cell.fourthNumberLabel?.text = String(describing: numbers[indexPath.row][3])
         
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "directionSegue"{
+            let dest = segue.destination as! DisplayMathViewController
+            let indexPathRow = tableView.indexPathForSelectedRow?.row
+            if let unwrappedRow = indexPathRow{
+                dest.numbers = numbers[unwrappedRow]
+        
+            }
+        }
+        
+        
+        
+    }
 
 
 }
-
-
-
 // MARK: - Generating an array of Data
 extension TableViewController {
     

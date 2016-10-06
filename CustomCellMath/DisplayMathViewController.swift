@@ -33,6 +33,8 @@ class DisplayMathViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        print(numbers)
         displayNumbersInCorrespondingLabels()
         updateLabelsWithOperation(+)
     }
